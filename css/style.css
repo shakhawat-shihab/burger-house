@@ -1,0 +1,390 @@
+body{
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+header{
+    height: 100vh;
+    background-image: url("/images/background.png");
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navbar-left{
+
+}
+
+.navbar-right{
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+
+.navbar-right li{
+    padding: 10px 20px;
+    /* background-color: aqua; */
+}
+
+.navbar-right li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+.navbar-right li:hover{
+    border-bottom: 3px solid black;
+}
+
+
+.banner{
+    display: flex;
+    /* height: 80vh; */
+    margin-top: 40px;
+    margin-left: 70px;
+}
+
+.banner-left{
+    flex-direction: column;
+display: flex;
+justify-content: center;
+}
+
+.banner-left h3 {
+    border: 3px dashed red;
+    font-size: 27.5px;
+    padding: 13px;
+    color: #42200B;
+}
+
+.banner-left h1 {
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-size: 50px;
+    margin: 0px;
+    color: #42200B;
+    padding-top: 30px;
+    font-weight: 900;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+.banner-right {
+    position: relative;
+}
+
+.banner-right .img1{
+    position: absolute;
+left: 130px;
+top: 30px;
+width: 380px;
+}
+
+.banner-right .img2{
+    position: absolute;
+    left: 360px;
+    top: 200px;
+    z-index: 2;
+    width: 350px;
+}
+
+.banner-right .img2:hover{
+    transition: 2s transform ease-in-out;
+    transform: scale(1.1);
+}
+
+.banner-right .img3{
+    position: absolute;
+    left: 600px;
+    top: 0px;
+    height: 450px;
+  }
+
+
+.offers{
+    display: flex;
+    padding: 10px;
+    /* background-color: red; */
+    justify-content: space-between;
+    gap:20px;
+    margin-top: 50PX;
+    margin-bottom: 50PX;
+}
+
+.offers .left{
+    width:50%;
+    /* background-color: green; */
+    background-image: url("../images/burger-banner/burger_1.png");
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: 100% 100%;  */
+    border-radius: 10px;
+}
+
+.offers h5{
+    margin: 0px;
+    padding-top:50px;
+    padding-left: 40px;
+    font-size: 22px;
+    color: aliceblue;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.offers h5 span{
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.offers .right h5{
+    padding-left: 40px;
+}
+
+.offers .right{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: blue; */
+    gap:20px;
+}
+
+
+
+.offers .right .child-1{
+    background-image: url("../images/burger-banner/burger_2.png");
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: 100% 100%;  */
+    border-radius: 10px;
+}
+
+.offers .right .child-2{
+    background-image: url("../images/burger-banner/burger_3.png");
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: 100% 100%;  */
+    border-radius: 10px;
+}
+
+.offers-button{
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    background-color: #FFC135;
+    color: #42200B;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.choose-burger{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.choose-burger .card-container{
+    margin-top: 60px;
+    display: flex;
+    gap: 15px;
+
+}
+
+.choose-burger .card-container .card{
+    /* background-color: #42200B; */
+    padding: 15px 30px;
+}
+
+.choose-burger .title-sec{
+    text-align: center;
+    color: #42200B;
+}
+
+.choose-burger .title-sec h1{
+    font-family: 'Roboto Slab', serif;
+    font-size: 52px;
+}
+
+.choose-burger .title-sec p{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+.choose-burger .card-text{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+
+
+.choose-burger .card .img-container :first-child{
+    height: 230px;
+    width: 250px;
+}
+
+.choose-burger .card .img-container:first-child:hover{
+    transform: scale(1.2);
+    transition: 2s transform;
+}
+
+.choose-burger .card .img-container :last-child{
+    width: 240px;
+    height: 71px;
+}
+
+
+.order-button{
+    color: white;
+    background-color: #DE1C1C;
+    font-size: 20px;
+    font-weight: bold;
+    border:0px;
+    padding: 10px 20px ;
+    cursor: pointer;
+}
+
+
+
+
+.reservation-form{
+    margin-top: 80px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.reservation-form .plate{
+    position: absolute;
+    right: 0px;
+    bottom: -120px;
+    height: 300px;
+    z-index: -1;
+}
+
+.reservation-form .bottle{
+    position: absolute;
+    left: 40px;
+    top: 250px;
+    height: 300px;
+    z-index: -1;
+}
+.reservation-form .burger{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 300px;
+    z-index: -1;
+}
+
+.reservation-form h1{
+    font-family: 'Roboto Slab', serif;
+    font-size: 45px;
+    font-weight: 800;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #42200B;
+}
+
+.reservation-form form{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    padding: 60px 60px;
+}
+
+.reservation-form .row{
+    display: flex;
+    gap:20px;
+}
+
+.reservation-form .row div{
+    width: 100%;
+    text-align: center;
+}
+
+
+.reservation-form .row input{
+    width: 70%;
+    height: 40px;
+    padding: 5px 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #42200B;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.find-button{
+    background-color: #DE1C1C;
+    color: white;
+    font-size:  18px;
+    font-weight: 600;
+    cursor: pointer;
+    /* padding-top: 15px;
+    padding-bottom: 15px; */
+    border-radius: 5px;
+    width: 75%;
+    height: 55px;
+}
+
+
+footer{
+    margin-top: 100px;
+    padding-top:60px;
+    padding-bottom:60px;
+    background-image: url(../images/background-footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer .row{
+    display: flex;
+    align-items: center;
+}
+
+footer .row .left{
+    width: 50%;
+}
+
+
+footer .row .right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+footer .row .left p{
+    color: white;
+}
+footer .row .right p{
+    color: white;
+}
+
+footer .icon-style{
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+footer .social-link{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    margin-right: 15px;
+    text-decoration: none;
+}
